@@ -1,0 +1,25 @@
+/* FONT FACE - font-display: fallback; */
+
+@font-face {
+    font-family: 'plf';
+    src: url('../fonts/PlayfairDisplay-Black.woff2') format('woff2'), url('../fonts/PlayfairDisplay-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'mb';
+    src: url('../fonts/Muli-Black.woff2') format('woff2'), url('../fonts/Muli-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'ml';
+    src: url('../fonts/Muli-Light.woff2') format('woff2'), url('../fonts/Muli-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: fallback;
+}
