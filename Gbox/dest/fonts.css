@@ -37,5 +37,13 @@
     src: url("../fonts/Gala-Bold.woff2") format("woff2"), url("../fonts/Gala-Bold.woff") format("woff");
     font-weight: bold;
     font-style: normal;
-    font-display: swap;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "din";
+    src: url('../fonts/DINCondensed-Bold.woff2') format('woff2'), url('../fonts/DINCondensed-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: fallback;
 }
