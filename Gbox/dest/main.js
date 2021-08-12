@@ -40,15 +40,15 @@ $(document).ready(function() {
         });
     }
     nav();
-
+    //flickity Project
     function project() {
         $('.main-carousel').flickity({
             // options
             cellAlign: 'left',
             contain: true,
             wrapAround: true,
-            prevNextButtons: false,
-            // pageDots: false,
+            // prevNextButtons: false,
+            pageDots: false,
             fullscreen: true,
         });
         $('.btn-slider.next').on('click', function() {
@@ -62,9 +62,39 @@ $(document).ready(function() {
         // $('.main-carousel').flickity('viewFullscreen')
         $('.fullscreen').on('click', function() {
             $('.main-carousel').flickity('viewFullscreen');
+
+        });
+        $('.carousel img').on('click', function() {
+            $('.main-carousel').flickity('viewFullscreen');
+
         });
     }
     project();
+    //flickity Studio-Detail
+    function studioDetail() {
+        $('.main-carousel').flickity({
+            // options
+            cellAlign: 'left',
+            contain: true,
+            wrapAround: true,
+            // prevNextButtons: false,
+            pageDots: false,
+            fullscreen: true,
+        });
+        $('.btn.next').on('click', function() {
+            $('.main-carousel').flickity('next');
+        });
+        // previous wrapped
+        $('.btn.prev').on('click', function() {
+            $('.main-carousel').flickity('previous', true);
+        });
+
+        // $('.main-carousel').flickity('viewFullscreen')
+        $('.fullscreen').on('click', function() {
+            $('.main-carousel').flickity('viewFullscreen');
+        });
+    }
+    studioDetail();
 
     //đổi màu svg
     jQuery('img.svg').each(function() {
