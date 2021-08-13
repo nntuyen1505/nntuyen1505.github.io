@@ -121,5 +121,18 @@ $(document).ready(function() {
         }, 'xml');
 
     });
+    /*Change number studio -Rental page */
 
+    let changeStudio = document.querySelectorAll('.btn-number');
+
+    changeStudio.forEach(function(itemstd, index) {
+
+        itemstd.addEventListener('click', function() {
+            changeStudio.forEach(function(tag1) {
+                tag1.classList.remove('active');
+            });
+            this.classList.add('active');
+
+        })
+    })
 });
