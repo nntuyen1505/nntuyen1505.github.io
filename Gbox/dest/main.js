@@ -1,5 +1,23 @@
 $(document).ready(function() {
 
+    /*loader*/
+    // $(window).on("load", () => {
+    //     setTimeout(() => {
+    //         $('.onloadpage').removeClass('active');
+    //         $('body').removeClass('active');
+    //     }, 1500);
+    // });
+    function loader() {
+        let onloadpage = $('.onloadpage');
+        let body = $('body');
+        setTimeout(function() {
+            onloadpage.css("display", "none");
+            body.removeClass('active');
+        }, 1500);
+    }
+    loader()
+
+
     /*tag Langding  Page*/
     function tag() {
         let tagText = $('.project__list .tag');
